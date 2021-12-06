@@ -1,5 +1,5 @@
 class Spaceship extends Floater  
-{  
+{   
     public Spaceship() {
       corners = 15;
       xCorners = new int[]{-12,-8,-4,-4,0,4,14,18,14,4,0,-4,-4,-8,-12};
@@ -10,6 +10,12 @@ class Spaceship extends Floater
       myXspeed = 0;
       myYspeed = 0;
       myPointDirection = 0;
+    }
+    public double getX() {
+      return myCenterX;
+    }
+    public double getY() {
+      return myCenterY;
     }
     public void limit() {
       if(myXspeed > 4){
